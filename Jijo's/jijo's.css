@@ -1,0 +1,145 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #495057;
+}
+
+/* Main Container */
+.container {
+    padding: 50px 5%;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    max-width: 100vw;
+    width: 100%;
+    height: 70vh;
+    background-image: url(https://jijoventure.com/_next/static/media/dottedCurve.d567a6a2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* Header Title */
+header h1 {
+    font-size: 60px;
+    color: #333333;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* Flex container for the cards */
+main {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+}
+
+/* General Card Styling */
+.reason-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 30px 1%;
+    border-radius: 8px;
+     width: 360px; 
+    box-sizing: border-box;
+    text-align: left;
+}
+
+
+
+/* Icon styling for the side cards */
+.reason-card .icon{
+    width: 40px;
+
+}
+
+
+/* Card Title */
+.reason-card h3 {
+    font-size: 18px;
+    color: #212529;
+    margin: 20px 0;
+    margin-bottom: 10px;
+}
+
+/* Card Paragraph */
+.reason-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #6c757d;
+
+}
+
+.reason-cards{
+    transition: transform 0.8s ease-in-out, z-index 0s 0.4s, filter 0.8s ease-in-out;
+
+}
+/* Special Styling for the Central Card */
+
+
+/* Overriding text colors for the central card */
+/* Icon for the central card */
+.central-card .icon-wrapper {
+    margin: 0 auto 20px auto; /* Center the icon */
+}
+
+
+.reason-card-1{
+    animation-name: box-1;
+    animation-duration: 9s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-delay: -6s; 
+
+}
+
+.reason-card-2{
+    top: 140px;
+    animation-name: box-2;
+    animation-duration: 9s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-delay: -3s; 
+
+
+} 
+.reason-card-3{
+    animation-name: box-3;
+    animation-duration: 9s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+
+} 
+
+
+ @keyframes box-1{
+    0%{left: 0px; top: 0px; z-index: 1;background-color: white;}
+    35%{left: 780px; top: 0px; z-index: 1;background-color: white; }
+    65%  {left:30%; top: 140px; z-index: 2; background-color: rgb(135, 3, 3); color: #f8f9fa;}
+    100%  {left: 0px; top: 0px; z-index: 1; background-color: white;}
+
+}
+@keyframes box-2{
+    0% {left: 0px; top: 140px; z-index: 2;  background-color: rgb(135, 3, 3); color: #f8f9fa;}
+    35%{left: -30%; top: 0px;z-index: 2;background-color: white; }
+    65%{left: 30%; top: 0px;z-index: 1; background-color: white; }
+    100%{left: 0px; top: 140px;z-index: 1; background-color: rgb(255, 111, 111);}
+}
+ @keyframes box-3{
+    0%{left: 0px; top: 0px;z-index: 1;background-color:  #f8f9fa;}
+    35%{left:-30%; top: 140px;z-index: 2;background-color: rgb(135, 3, 3); color: #f8f9fa;}
+     65%  {left:-60%; top: 0px;z-index: 1;background-color: white;} 
+    100%  {left: 0px; top: 0px;z-index: 1; background-color: white;}
+ }

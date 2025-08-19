@@ -1,0 +1,132 @@
+body {
+ color: white;
+ background: black;
+
+
+}
+
+.container{
+    height: 3000px;
+
+}
+ .container h1{
+    font-size: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    position: sticky;
+    margin-left: 100px;
+    top: 250px;
+    text-align: center;
+    padding: 10px 10%;
+} 
+.btn svg{
+    width: 10px;
+    
+}
+
+.card {
+    color: white;
+    width: 400px;
+    padding: 10px 5%;
+    margin: 10px;
+    
+}
+.card-1 {
+    position: relative;
+    top: 500px;
+    left: 80px;
+}
+.card-2{
+    position: relative; 
+    left: 700px;
+    top: 550px;
+}
+.card-3{
+    position: relative; 
+    left: 290px;
+    top: 600px;
+}
+.card {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-content,
+        .card-hover-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 1.5rem;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .card-content {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .card-hover-content {
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover .card-hover-content {
+            opacity: 1;
+        }
+        
+
+        .card-1 .card-content { background-color: #0043d3; }
+        .card-1 .card-hover-content { background-color: #0043d3; }
+        .card-1 p { color: #DBEAFE; }
+
+        .card-2 .card-content { background-color: #DC2626; }
+        .card-2 .card-hover-content { background-color: #B91C1C; }
+        .card-2 p{ color: #FEE2E2; }
+
+        .card-3 .card-content { background-color: #481971; }
+        .card-3 .card-hover-content { background-color: #481971; }
+        .card-3 p{ color: #F3E8FF; }
+
+
+        .card h2 {
+            font-size: 2rem; /* text-4xl */
+            font-weight: 400; /* font-bold */
+            margin: 0;
+
+        }
+
+        .card h3 {
+            font-weight: 500; /* font-bold */
+            margin-bottom: 1rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            line-height: 1.4;
+        }
+
+        .card p {
+            margin: 0;
+            flex-grow: 1; 
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        
+
+        .card a {
+            color: white;
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-decoration: none;
+            align-self: end;
+            
+        }
+
+       
+        .container{
+            height: 3000px;
+        
+        }
